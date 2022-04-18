@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "target": "es6",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true,
+    "types": [ "node", "jest" ],
+    "baseUrl": ".",
+    "paths": { // This mapping is relative to "baseUrl"
+      "*": ["*", "./node_modules/*"]
+    },
+    "esModuleInterop": true,
+    "allowJs": true,
+    "outDir": ""
+  },
+  "include":[
+    "./modules/auth/*",
+    "./modules/db/*",
+    "./modules/logging/*",
+    "./modules/settings/*",
+    "./modules/snippets/*",
+    "./modules/util/*"
+  ],
+  "exclude": [
+    "dist",
+    "meteor"
+  ]
+}
+
+
+
